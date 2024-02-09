@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <div id="priorityCounts" class="priority-box">
+        <p>High Priority: <span id="highPriorityCount">0</span></p>
+        <p>Medium Priority: <span id="mediumPriorityCount">0</span></p>
+        <p>Low Priority: <span id="lowPriorityCount">0</span></p>
+    </div>
+
+    <div class="container">
+        <div class="logo-container">
+            <img src="https://www.shutterstock.com/image-vector/bug-vector-icon-600nw-1335935765.jpg" alt="Logo" class="logo">
+            <h1 class="centered">Issue Tracker</h1>
+        </div>
+        
+        
+        <form id="issueForm">
+            <label for="issueInput">New Issue:</label>
+            <input type="text" id="issueInput" name="issueInput" required>
+            <label for="prioritySelect">Priority:</label>
+            <select id="prioritySelect" name="prioritySelect">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <label for="descriptionInput">Description:</label>
+            <textarea id="descriptionInput" name="descriptionInput" rows="4"></textarea>
+            <label for="fileInput">Attach File:</label>
+            <input type="file" id="fileInput" name="fileInput">
+            <button type="submit">Add Issue</button>
+        </form>
+        <ul id="issueList">
+          
+        </ul>
+    </div>
+
+    <footer>Made by Mathew</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
